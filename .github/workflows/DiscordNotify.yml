@@ -1,44 +1,16 @@
-name: Notify Discord on MD Changes
+name: DiscordNotify
 
 on:
   push:
     paths:
       - '**.md'
-    branches:
-      - main
-      - master
 
 jobs:
-  notify:
+  discord:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Send Discord Notification
-        env:
-          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      - name: Notify Discord
         run: |
-          COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
-          COMMIT_URL="${{ github.event.head_commit.url }}"
-          AUTHOR="${{ github.actor }}"
-          REPO="${{ github.repository }}"
-          BRANCH="${{ github.ref_name }}"
-          
-          curl -X POST $WEBHOOK_URL \
+          curl -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H 'Content-Type: application/json' \
-            -d "{
-              \"embeds\": [{
-                \"title\": \"📝 Markdown Updated\",
-                \"description\": \"$COMMIT_MESSAGE\",
-                \"url\": \"$COMMIT_URL\",
-                \"color\": 3447003,
-                \"fields\": [
-                  {\"name\": \"Repository\", \"value\": \"$REPO\", \"inline\": true},
-                  {\"name\": \"Branch\", \"value\": \"$BRANCH\", \"inline\": true},
-                  {\"name\": \"Author\", \"value\": \"$AUTHOR\", \"inline\": true}
-                ],
-                \"timestamp\": \"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\"
-              }]
-            }"
+            -d '{"content":"📝 Markdown actualizado en ${{ github.repository }}"}'
