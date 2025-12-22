@@ -16,28 +16,25 @@ jobs:
       - name: Get MD Files
         id: md_files
         run: |
-          FILES=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -E '\.md$' | head -1)
-          echo "file=$FILES" >> $GITHUB_OUTPUT
-          
-          if [ -f "$FILES" ]; then
-            CONTENT=$(head -c 1900 "$FILES" | sed 's/"/\\"/g')
-            echo "content=$CONTENT" >> $GITHUB_OUTPUT
-          fi
+          FILES=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -E '\.md$' | tr '\n' ', ')
+          echo "files=$FILES" >> $GITHUB_OUTPUT
 
       - name: Notify Discord
         run: |
-          FILE="${{ steps.md_files.outputs.file }}"
-          CONTENT="${{ steps.md_files.outputs.content }}"
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          COMMIT_URL="${{ github.event.head_commit.url }}"
           
           curl -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H 'Content-Type: application/json' \
             -d '{
-              "content": "📝 Markdown Updated",
+              "content": "📝 Markdown files updated!",
               "embeds": [{
-                "title": "📝 '$FILE'",
-                "description": "'"${CONTENT}"'",
+                "title": "📝 MD Changes",
+                "description": "'"${COMMIT_MSG}"'",
+                "url": "'"${COMMIT_URL}"'",
                 "color": 3447003,
                 "fields": [
+                  {"name": "📁 Files", "value": "'"${{ steps.md_files.outputs.files }}"'", "inline": false},
                   {"name": "Repository", "value": "${{ github.repository }}", "inline": true},
                   {"name": "Branch", "value": "${{ github.ref_name }}", "inline": true},
                   {"name": "Author", "value": "${{ github.actor }}", "inline": true}
