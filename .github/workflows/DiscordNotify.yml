@@ -13,31 +13,44 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get MD Files
-        id: md_files
+      - name: Get MD Files and Notify Discord
         run: |
           FILES=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -E '\.md$' | tr '\n' ', ')
-          echo "files=$FILES" >> $GITHUB_OUTPUT
-
-      - name: Notify Discord
-        run: |
           COMMIT_MSG="${{ github.event.head_commit.message }}"
           COMMIT_URL="${{ github.event.head_commit.url }}"
           
           curl -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H 'Content-Type: application/json' \
-            -d '{
-              "content": "📝 Markdown files updated!",
-              "embeds": [{
-                "title": "📝 MD Changes",
-                "description": "'"${COMMIT_MSG}"'",
-                "url": "'"${COMMIT_URL}"'",
-                "color": 3447003,
-                "fields": [
-                  {"name": "📁 Files", "value": "'"${{ steps.md_files.outputs.files }}"'", "inline": false},
-                  {"name": "Repository", "value": "${{ github.repository }}", "inline": true},
-                  {"name": "Branch", "value": "${{ github.ref_name }}", "inline": true},
-                  {"name": "Author", "value": "${{ github.actor }}", "inline": true}
-                ]
-              }]
-            }'
+            -d @- <<EOF
+          {
+            "content": "📝 Markdown files updated!",
+            "embeds": [{
+              "title": "📝 MD Changes",
+              "description": "$(echo "$COMMIT_MSG" | head -1)",
+              "url": "$COMMIT_URL",
+              "color": 3447003,
+              "fields": [
+                {
+                  "name": "📁 Files",
+                  "value": "$(echo "$FILES" | sed 's/,$//')",
+                  "inline": false
+                },
+                {
+                  "name": "Repository",
+                  "value": "${{ github.repository }}",
+                  "inline": true
+                },
+                {
+                  "name": "Branch",
+                  "value": "${{ github.ref_name }}",
+                  "inline": true
+                },
+                {
+                  "name": "Author",
+                  "value": "${{ github.actor }}",
+                  "inline": true
+                }
+              ]
+            }]
+          }
+          EOF
