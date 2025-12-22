@@ -19,5 +19,3 @@
 - ✅ Completed
 - ✅❌ In Development
 - ❌ Missing
-
-Probando discord
