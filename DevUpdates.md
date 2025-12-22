@@ -14,10 +14,8 @@
 - ✅❌ Scares (Micro scares)
 - ✅❌ Settings menu (Controls, Graphics and Sound Settings)
 
-
 ## 📊 Status Legend
 
 - ✅ Completed
-- ✅❌ In Development 
+- ✅❌ In Development
 - ❌ Missing
-
