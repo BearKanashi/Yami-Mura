@@ -23,7 +23,7 @@ jobs:
             exit 0
           fi
           
-          # Clean markdown content: limit to 15 lines, remove markdown syntax
+          # Clean markdown content: limit to 15 lines, remove markdown syntax, preserve line breaks
           CONTENT=$(head -n 15 "$FILE" | \
             sed 's/^[#]* //g' | \
             sed 's/\*\*//g' | \
@@ -35,8 +35,8 @@ jobs:
             sed 's/\[//g' | \
             sed 's/\]//g')
           
-          # Escape for JSON
-          CONTENT=$(echo "$CONTENT" | sed 's/"/\\"/g')
+          # Escape for JSON with line breaks
+          CONTENT=$(echo "$CONTENT" | sed 's/"/\\"/g' | sed ':a;N;$!ba;s/\n/\\n/g')
           
           COMMIT_MSG="${{ github.event.head_commit.message }}"
           COMMIT_URL="${{ github.event.head_commit.url }}"
