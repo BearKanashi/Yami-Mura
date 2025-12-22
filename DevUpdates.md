@@ -12,6 +12,7 @@
 - ✅❌ Family (Shorts)
 - ✅ Train (Intro)
 - ✅❌ Scares (Micro scares)
+- ✅❌ Settings menu (Controls, Graphics and Sound Settings)
 
 
 ## 📊 Status Legend
