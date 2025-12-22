@@ -23,11 +23,11 @@ jobs:
             exit 0
           fi
           
-          # Read file content and limit to 1800 chars
-          CONTENT=$(head -c 1800 "$FILE" | sed 's/"/\\"/g' | sed "s/'/\\\\'/g")
+          # Read file content and limit to 400 chars
+          CONTENT=$(head -c 400 "$FILE" | sed 's/"/\\"/g' | sed "s/'/\\\\'/g")
           
-          # Remove problematic emojis from content
-          CONTENT=$(echo "$CONTENT" | sed 's/[📝🔧🎨💻🐛✨🚀]/[emoji]/g')
+          # Remove problematic emojis and special chars
+          CONTENT=$(echo "$CONTENT" | sed 's/[📝🔧🎨💻🐛✨🚀]/[]/g' | sed 's/```/\`\`\`/g')
           
           COMMIT_MSG="${{ github.event.head_commit.message }}"
           COMMIT_URL="${{ github.event.head_commit.url }}"
