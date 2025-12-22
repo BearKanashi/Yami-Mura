@@ -23,11 +23,20 @@ jobs:
             exit 0
           fi
           
-          # Read file content and limit to 400 chars
-          CONTENT=$(head -c 400 "$FILE" | sed 's/"/\\"/g' | sed "s/'/\\\\'/g")
+          # Clean markdown content: limit to 15 lines, remove markdown syntax
+          CONTENT=$(head -n 15 "$FILE" | \
+            sed 's/^[#]* //g' | \
+            sed 's/\*\*//g' | \
+            sed 's/\*//g' | \
+            sed 's/`//g' | \
+            sed 's/- //g' | \
+            sed 's/✓//g' | \
+            sed 's/✗//g' | \
+            sed 's/\[//g' | \
+            sed 's/\]//g')
           
-          # Remove problematic emojis and special chars
-          CONTENT=$(echo "$CONTENT" | sed 's/[📝🔧🎨💻🐛✨🚀]/[]/g' | sed 's/```/\`\`\`/g')
+          # Escape for JSON
+          CONTENT=$(echo "$CONTENT" | sed 's/"/\\"/g')
           
           COMMIT_MSG="${{ github.event.head_commit.message }}"
           COMMIT_URL="${{ github.event.head_commit.url }}"
