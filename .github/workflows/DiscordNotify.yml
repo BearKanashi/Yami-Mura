@@ -13,9 +13,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get MD Files and Notify Discord
+      - name: Get MD Content and Notify Discord
         run: |
-          FILES=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -E '\.md$' | tr '\n' ', ')
+          # Get the MD file that changed
+          FILE=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -E '\.md$' | head -1)
+          
+          if [ -z "$FILE" ]; then
+            echo "No MD files found"
+            exit 0
+          fi
+          
+          # Read file content and limit to 1800 chars
+          CONTENT=$(head -c 1800 "$FILE" | sed 's/"/\\"/g' | sed "s/'/\\\\'/g")
+          
+          # Remove problematic emojis from content
+          CONTENT=$(echo "$CONTENT" | sed 's/[📝🔧🎨💻🐛✨🚀]/[emoji]/g')
+          
           COMMIT_MSG="${{ github.event.head_commit.message }}"
           COMMIT_URL="${{ github.event.head_commit.url }}"
           
@@ -23,16 +36,16 @@ jobs:
             -H 'Content-Type: application/json' \
             -d @- <<EOF
           {
-            "content": "📝 Markdown files updated!",
+            "content": "Markdown Updated",
             "embeds": [{
-              "title": "📝 MD Changes",
-              "description": "$(echo "$COMMIT_MSG" | head -1)",
+              "title": "File: $FILE",
+              "description": "$CONTENT",
               "url": "$COMMIT_URL",
               "color": 3447003,
               "fields": [
                 {
-                  "name": "📁 Files",
-                  "value": "$(echo "$FILES" | sed 's/,$//')",
+                  "name": "Commit",
+                  "value": "$(echo "$COMMIT_MSG" | head -1)",
                   "inline": false
                 },
                 {

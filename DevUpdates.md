@@ -1,6 +1,6 @@
 # 🎮 Dev-Updates
 
-## 🔧 System
+## System
 
 - ✅❌ Player Controller (TPS & Camera)
 - ✅ Add New Puzzle (Farewell shoes)
@@ -14,7 +14,7 @@
 - ✅❌ Scares (Micro scares)
 - ✅❌ Settings menu (Controls, Graphics and Sound Settings)
 
-## 📊 Status Legend
+## Status Legend
 
 - ✅ Completed
 - ✅❌ In Development
