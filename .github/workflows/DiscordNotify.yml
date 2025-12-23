@@ -23,38 +23,23 @@ jobs:
             exit 0
           fi
           
-          # Clean markdown content: limit to 15 lines, remove markdown syntax, preserve line breaks
-          CONTENT=$(head -n 15 "$FILE" | \
-            sed 's/^[#]* //g' | \
-            sed 's/\*\*//g' | \
-            sed 's/\*//g' | \
-            sed 's/`//g' | \
-            sed 's/- //g' | \
-            sed 's/✓//g' | \
-            sed 's/✗//g' | \
-            sed 's/\[//g' | \
-            sed 's/\]//g')
-          
-          # Escape for JSON with line breaks
-          CONTENT=$(echo "$CONTENT" | sed 's/"/\\"/g' | sed ':a;N;$!ba;s/\n/\\n/g')
-          
           COMMIT_MSG="${{ github.event.head_commit.message }}"
           COMMIT_URL="${{ github.event.head_commit.url }}"
+          FILE_URL="https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/$FILE"
           
           curl -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H 'Content-Type: application/json' \
             -d @- <<EOF
           {
-            "content": "Markdown Updated",
+            "content": "📄 Markdown Updated",
             "embeds": [{
-              "title": "File: $FILE",
-              "description": "$CONTENT",
+              "title": "$(echo "$COMMIT_MSG" | head -1)",
               "url": "$COMMIT_URL",
               "color": 3447003,
               "fields": [
                 {
-                  "name": "Commit",
-                  "value": "$(echo "$COMMIT_MSG" | head -1)",
+                  "name": "Archivo",
+                  "value": "[Ver en GitHub]($FILE_URL)",
                   "inline": false
                 },
                 {
@@ -68,7 +53,7 @@ jobs:
                   "inline": true
                 },
                 {
-                  "name": "Author",
+                  "name": "Autor",
                   "value": "${{ github.actor }}",
                   "inline": true
                 }
