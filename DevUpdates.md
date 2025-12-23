@@ -10,7 +10,7 @@
 
  ✅ Add New Puzzle (Macabre dolls)
 
- ❌ Add New Puzzle (Labyrinth)
+ ✅❌ Add New Puzzle (Labyrinth)
 
  ❌ Add New Puzzle (Cars)
 
