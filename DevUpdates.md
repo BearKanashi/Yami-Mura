@@ -26,6 +26,9 @@
 
  ✅ Grain+Dust (Gameplay effect)
 
+ ✅ History (Introduction)
+
+ ✅❌ Enemies (1/5)
 
 ## Status Legend
 
