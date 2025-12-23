@@ -24,6 +24,8 @@
 
  ✅❌ Settings menu (Controls, Graphics and Sound Settings)
 
+ ✅ Grain+Dust (Gameplay effect)
+
 
 ## Status Legend
 
