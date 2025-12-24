@@ -32,6 +32,8 @@
 
  ✅❌ Steam achievements (+10 achievements)
 
+ ✅ Initial Guidance
+
 ## Status Legend
 
  ✅ Completed
