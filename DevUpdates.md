@@ -30,7 +30,7 @@
 
  ✅❌ Enemies (1/5)
 
- ✅❌ Steam achievements (+10 achievements)
+ ✅❌ Steam achievements (+8 achievements)
 
 ## Status Legend
 
