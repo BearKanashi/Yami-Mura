@@ -26,13 +26,11 @@
 
  ✅ Grain+Dust (Gameplay effect)
 
- ✅ History (Introduction)
+ ✅ History (Introduction, Initial Guidance)
 
  ✅❌ Enemies (1/5)
 
  ✅❌ Steam achievements (+10 achievements)
-
- ✅ Initial Guidance
 
 ## Status Legend
 
