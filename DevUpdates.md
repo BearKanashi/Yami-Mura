@@ -20,7 +20,7 @@
 
  ✅ Train (Intro)
 
- ✅❌ Scares (Micro scares)
+ ✅❌ Scares (Micro)
 
  ✅❌ Settings menu (Controls, Graphics and Sound Settings)
 
