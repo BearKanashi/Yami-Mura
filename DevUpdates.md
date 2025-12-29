@@ -12,7 +12,7 @@
 
  ✅❌ Add New Puzzle (Labyrinth)
 
- ❌ Add New Puzzle (3 Cars)
+ ❌ Add New Puzzle (Need 3 Cars)
 
  ✅ Lighting system fixed and functional
 
