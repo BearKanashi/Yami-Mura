@@ -31,11 +31,3 @@
  ✅❌ Enemies (1/5)
 
  ✅❌ Steam achievements (+8 achievements)
-
-## Status Legend
-
- ✅ Completed
-
- ✅❌ In Development
-
- ❌ Missing
