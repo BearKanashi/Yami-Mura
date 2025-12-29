@@ -30,4 +30,4 @@
 
  ✅❌ Enemies (1/6)
 
- ✅❌ Steam achievements (+14 achievement)
+ ✅❌ Steam achievements (+14 achievements)
