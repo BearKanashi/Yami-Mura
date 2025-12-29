@@ -16,7 +16,7 @@
 
  ✅ Lighting system fixed and functional
 
- ✅❌ Family (Shorts)
+ ✅❌ Family (Short)
 
  ✅ Train (Intro)
 
