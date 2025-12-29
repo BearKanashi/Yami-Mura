@@ -28,6 +28,6 @@
 
  ✅ History (Introduction, Initial Guidance)
 
- ✅❌ Enemies (1/5)
+ ✅❌ Enemies (1/6)
 
  ✅❌ Steam achievements (+14 achievements)
