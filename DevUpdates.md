@@ -1,14 +1,8 @@
 ## 🎮 Dev-Update
 
-## System
+## System 0.0.2b
 
  ✅❌ Player Controller (TPS & Camera)
-
- ✅ Add New Puzzle (Farewell shoes)
-
- ✅ Add New Puzzle (Mirrors)
-
- ✅ Add New Puzzle (Macabre dolls)
 
  ✅❌ Add New Puzzle (Labyrinth)
 
@@ -20,6 +14,12 @@
 
  ✅ Train (Intro)
 
+ ✅ SFX (70%)
+
+ ✅ Optimize Map & Code
+
+ ✅ Anticheat & Ranking for Speed Run
+
  ✅❌ Scares (Micro)
 
  ✅❌ Settings menu (Controls, Graphics and Sound Settings)
@@ -30,4 +30,4 @@
 
  ✅❌ Enemies (1/6)
 
- ✅❌ Steam achievements (+6 achievements)
+ ✅ Steam achievements (+1 achievements)
