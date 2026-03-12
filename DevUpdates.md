@@ -29,7 +29,7 @@
 
  ✅ History (Introduction, Initial Guidance)
 
- ✅❌ Enemies (1/6)
+ ✅❌ Enemies (3/4)
 
- ✅ Steam achievements (+1 achievements)
+ ✅ Steam achievements (+2 achievements)
 
