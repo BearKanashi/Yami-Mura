@@ -1,8 +1,33 @@
-🚨 **¡NUEVA DONACIÓN!** 🚨
-💸 **+25€**
+## System 0.0.2b
 
-🎯 **Proyecto en marcha**
-▓▓▓▓▓▓▓▓▓▓▓▓▓░ 92,8%
-**2.785€ / 3.000€**
+ ✅❌ Player Controller (TPS & Camera)
 
-💙 ¡Gracias! 🐻
+ ✅❌ Add New Puzzle (Labyrinth)
+
+ ❌ Add New Puzzle (Need 3 Cars)
+
+ ✅ Lighting system fixed and functional
+
+ ✅❌ Family
+
+ ✅ Train (Intro)
+
+ ✅ SFX (70%)
+
+ ✅ Optimize Map & Code
+
+ ✅ Anticheat & Ranking for Speed Run
+
+ ✅❌ Scares (Micro)
+
+ ✅❌ Settings menu (Controls, Graphics and Sound Settings)
+
+ ✅ Grain+Dust (Gameplay effect)
+
+ ✅ History (Introduction, Initial Guidance)
+
+ ✅❌ Enemies (3/4)
+
+ ✅ Steam achievements (+2 achievements)
+
+
