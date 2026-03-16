@@ -1,33 +1,68 @@
-## System 0.0.7
+# 🕯️ System 0.0.7
 
- ✅❌ Player Controller (TPS & Camera)
+Current development status.
 
- ✅❌ Add New Puzzle (Labyrinth)
+---
 
- ❌ Add New Puzzle (Need 3 Cars)
+## 🎭 Characters
 
- ✅ Lighting system fixed and functional
+| Character       | Status                                |
+| --------------- | ------------------------------------- |
+| 🧍 Protagonist  | ✅ Development complete                |
+| 👧 Sister       | 🔧 In development                     |
+| 👨‍👩‍👧 Family | ⚠️ In progress (mother still missing) |
 
- ✅❌ Family
+---
 
- ✅ Train (Intro)
+## 📖 Story
 
- ✅ SFX (70%)
+**Main Story Progress: 70%**
 
- ✅ Optimize Map & Code
+```
+██████████████░░░░░░
+```
 
- ✅ Anticheat & Ranking for Speed Run
+---
 
- ✅❌ Scares (Micro)
+## 🧩 Gameplay
 
- ✅❌ Settings menu (Controls, Graphics and Sound Settings)
+| System               | Status                                                          |
+| -------------------- | --------------------------------------------------------------- |
+| 🧩 Puzzles           | 🔧 Mostly in development, adding a pre-stage before each puzzle |
+| ⏱️ Time-based scares | 🔧 In development                                               |
+| 🗺️ Map scares       | ✅ Finished                                                      |
 
- ✅ Grain+Dust (Gameplay effect)
+---
 
- ✅ History (Introduction, Initial Guidance)
+## 👹 Enemies
 
- ✅❌ Enemies (3/4)
+**Progress: 2 / 4**
 
- ✅ Steam achievements (+2 achievements)
+```
+██████████░░░░░░░░░░
+```
 
+Currently developing **4 main enemies**.
+
+---
+
+## ⭐ Extras
+
+**Progress: 60%**
+
+```
+████████████░░░░░░░░
+```
+
+---
+
+## 🛠️ Development Notes
+
+* The **main story** is being expanded and refined.
+* **Pre-stages are being added before puzzles** to improve pacing.
+* **Map-based scares are fully completed**.
+
+---
+
+📌 **Current Version:** `System 0.0.7`
 
