@@ -1,116 +1,107 @@
-# 🌑 YAMI MURA — System 0.0.7 (開発状態)
+# YAMI MURA — System 0.0.7 (開発状態)
 
-Current development status of **YAMI MURA**.
+Current development status of **YAMI MURA**.  
 A quiet village… a hidden truth… and something watching in the dark.
 
 ---
 
-## 👤 Characters
+## Characters
 
-| Character         | Status                                |
-| ----------------- | ------------------------------------- |
-| 主人公 (Protagonist) | ✅ Development complete                |
-| 妹 (Sister)        | 🔧 In development                     |
-| 家族 (Family)       | ⚠️ In progress (mother still missing) |
+| Character              | Status                                |
+|-----------------------|----------------------------------------|
+| 主人公 (Protagonist)  | Development complete                   |
+| 妹 (Sister)           | In development                         |
+| 家族 (Family)         | In progress (mother still missing)     |
 
 ---
 
-## 📖 Story
+## Story
 
 **Main Story Progress: 70%**
 
 ```
-(¬‿¬ )   ██████████████░░░░░░
+██████████████░░░░░░
 ```
 
 ---
 
-## 🗺️ Map
+## Map
 
 **Map Development: 84%**
 
 ```
-(つ﹏<)･ﾟ｡   █████████████████░░░
+█████████████████░░░
 ```
 
 ---
 
-## 🧩 Gameplay
+## Gameplay
 
-| System               | Status                                                          |
-| -------------------- | --------------------------------------------------------------- |
-| 🧩 Puzzles           | 🔧 Mostly in development, adding a pre-stage before each puzzle |
-| ⏱️ Time-based scares | 🔧 In development                                               |
-| 🗾 Map scares        | ✅ Finished                                                      |
+| System                | Status                                                         |
+|----------------------|----------------------------------------------------------------|
+| Puzzles              | Mostly in development, adding a pre-stage before each puzzle  |
+| Time-based scares    | In development                                                |
+| Map scares           | Finished                                                      |
 
 ---
 
-## 👹 Enemies
+## Enemies
 
 **Progress: 2 / 4**
 
 ```
-(ノಠ益ಠ)ノ彡┻━┻   ██████████░░░░░░░░░░
+██████████░░░░░░░░░░
 ```
 
 Something is wandering through **Yami Mura…**
 
 ---
 
-## ⭐ Extras
+## Extras
 
 **Progress: 60%**
 
 ```
-(；一_一)   ████████████░░░░░░░░
+████████████░░░░░░░░
 ```
 
 ---
 
-## 📦 DLC
+## DLC
 
-**Status:** 🔧 In development
+**Status:** In development  
 
-```
-(；ﾟДﾟ)   4 DLC expansions are being prepared...
-```
+4 DLC expansions are being prepared...
 
 ---
 
-## 🎬 Launch Trailer
+## Launch Trailer
 
-**Status:** 🔧 In development
+**Status:** In development  
 
-```
-(☉_☉)   A trailer is currently being prepared...
-```
+A trailer is currently being prepared...
 
 ---
 
-## 🧪 Beta
+## Beta
 
-**Status:** ✅ First version released
+**Status:** First version released  
 
-```
-(￣▽￣;)   The first playable beta has been published.
-```
+The first playable beta has been published.
 
 ---
 
-## 🛠️ Development Notes
+## Development Notes
 
-* The **main story** continues to evolve.
-* **Pre-stages before puzzles** are being added to improve tension.
-* **Map-based scares are fully completed**.
+- The main story continues to evolve.
+- Pre-stages before puzzles are being added to improve tension.
+- Map-based scares are fully completed.
 
 ---
 
-```
-(屮ﾟДﾟ)屮
 The village is not what it seems...
-```
 
-📌 **Project:** **YAMI MURA**
-📌 **Current Version:** `System 0.0.7`
+**Project:** YAMI MURA  
+**Current Version:** System 0.0.7
 
 
