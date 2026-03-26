@@ -1,107 +1,57 @@
-# YAMI MURA — System 0.0.7 (開発状態)
+╔══════════════════════════════════════════════════════╗
+║        🐻 YAMI MURA — System 0.0.8 (開発状態) 🐻       ║
+╚══════════════════════════════════════════════════════╝
 
-Current development status of **YAMI MURA**.  
-A quiet village… a hidden truth… and something watching in the dark.
-
----
-
-## Characters
-
-| Character              | Status                                |
-|-----------------------|----------------------------------------|
-| 主人公 (Protagonist)  | Development complete                   |
-| 妹 (Sister)           | In development                         |
-| 家族 (Family)         | In progress (mother still missing)     |
+> 🚧 **Development Status:** Active  
+> 🛠️ **Build Type:** Iteration Update  
+> 🎮 **Focus:** Gameplay Experience, Narrative Clarity & Optimization  
 
 ---
 
-## Story
+## 🐻✨ Features & Improvements
 
-**Main Story Progress: 70%**
-
-```
-██████████████░░░░░░
-```
-
----
-
-## Map
-
-**Map Development: 84%**
-
-```
-█████████████████░░░
-```
+### 🦋 Enhanced Intro Guidance System
+- Red butterflies now guide the player **from point A to point B**.
+- Improved path clarity without breaking immersion.
+- Better balance between **exploration** and **player direction**.
 
 ---
 
-## Gameplay
-
-| System                | Status                                                         |
-|----------------------|----------------------------------------------------------------|
-| Puzzles              | Mostly in development, adding a pre-stage before each puzzle  |
-| Time-based scares    | In development                                                |
-| Map scares           | Finished                                                      |
+### 🌌 Skybox Optimization
+- Performance improvements applied to the environment rendering.
+- Smoother visual experience across different hardware.
+- Reduced unnecessary resource consumption.
 
 ---
 
-## Enemies
-
-**Progress: 2 / 4**
-
-```
-██████████░░░░░░░░░░
-```
-
-Something is wandering through **Yami Mura…**
+### 🧠 Dialogue & Story Adjustments
+- Refined dialogues to improve **story comprehension**.
+- Better narrative flow during early gameplay.
+- Ongoing work to strengthen emotional impact.
 
 ---
 
-## Extras
-
-**Progress: 60%**
-
-```
-████████████░░░░░░░░
-```
+### 🎮 Gameplay Fixes
+- Various minor fixes and tweaks.
+- Improved overall gameplay stability.
+- Small adjustments to enhance player experience.
 
 ---
 
-## DLC
-
-**Status:** In development  
-
-4 DLC expansions are being prepared...
+## 🐻📌 Notes
+> This update focuses on polishing the **intro experience** and setting a stronger foundation for upcoming horror elements.
 
 ---
 
-## Launch Trailer
-
-**Status:** In development  
-
-A trailer is currently being prepared...
-
----
-
-## Beta
-
-**Status:** First version released  
-
-The first playable beta has been published.
+## 🐻🚀 Coming Soon
+- 😱 Jump scares implementation
+- 🎭 Improved character reactions & expressions
+- 🔊 Enhanced audio design
+- 🤖 Introductory companion NPC
 
 ---
 
-## Development Notes
-
-- The main story continues to evolve.
-- Pre-stages before puzzles are being added to improve tension.
-- Map-based scares are fully completed.
-
----
-
-The village is not what it seems...
-
-**Project:** YAMI MURA  
-**Current Version:** System 0.0.7
-
-
+╔══════════════════════════════════════════════════════╗
+║        🐻 Thank you for supporting YAMI MURA 🐻       ║
+║     Your feedback helps us improve every build!      ║
+╚══════════════════════════════════════════════════════╝
