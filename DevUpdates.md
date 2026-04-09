@@ -1,5 +1,5 @@
 ╔══════════════════════════════════════════════════════╗
-║        🐻 YAMI MURA — System 0.0.8 (開発状態) 🐻       ║
+║        🐻 YAMI MURA — System 0.0.8 (Dev Stage) 🐻                     ║
 ╚══════════════════════════════════════════════════════╝
 
 > 🚧 **Development Status:** Active  
@@ -13,21 +13,23 @@
 ### 🦋 Enhanced Intro Guidance System
 - Red butterflies now guide the player **from point A to point B**.
 - Improved path clarity without breaking immersion.
-- Better balance between **exploration** and **player direction**.
+- **Fixed the Sister's Companion System** for smoother and more natural navigation.
 
 ---
 
-### 🌌 Skybox Optimization
-- Performance improvements applied to the environment rendering.
-- Smoother visual experience across different hardware.
-- Reduced unnecessary resource consumption.
+### ⚙️ Engine & Performance Optimization
+- **CPU Usage Optimized** through better thread and process management.
+- **Search Queries Optimized** within the engine to reduce loading times and latency.
+- Deep code cleanup: **Optimized inefficient use of duplicated logic** across different scripts.
+- **Duplicate Reference Usage Optimized** to improve RAM management.
+- **Skybox Optimization:** Performance enhancements applied to environment rendering.
 
 ---
 
 ### 🧠 Dialogue & Story Adjustments
 - Refined dialogues to improve **story comprehension**.
 - Better narrative flow during early gameplay.
-- Ongoing work to strengthen emotional impact.
+- **Added Diary System:** Players can now collect content and follow the lore through detailed notes and entries.
 
 ---
 
@@ -39,7 +41,7 @@
 ---
 
 ## 🐻📌 Notes
-> This update focuses on polishing the **intro experience** and setting a stronger foundation for upcoming horror elements.
+> This update focuses on **technical stability** and polishing the intro experience, establishing a solid foundation for upcoming horror elements.
 
 ---
 
@@ -47,11 +49,11 @@
 - 😱 Jump scares implementation
 - 🎭 Improved character reactions & expressions
 - 🔊 Enhanced audio design
-- 🤖 Introductory companion NPC
+- 🤖 Introductory companion NPC (Art)
 
 ---
 
 ╔══════════════════════════════════════════════════════╗
-║        🐻 Thank you for supporting YAMI MURA 🐻       ║
-║     Your feedback helps us improve every build!      ║
+║         🐻 Thank you for supporting YAMI MURA 🐻                      ║
+║      Your feedback helps us improve every build!                       ║
 ╚══════════════════════════════════════════════════════╝
